@@ -1,0 +1,23 @@
+- general idea is to make a cross-platform, well documented, beautiful
+looking music streamer in java that cuts through all the dead projects and outdated
+sketchy music streamer.
+- I want to show how beautiful a java music player can be
+however im concerned about performance and readability.
+- In a sense this should be the fullest "bare-bones" project.
+
+        Here is a list of features or general things that need to be added.
+
+    [] Basic gui window
+    [] Draft of UI layout with buttons
+    [] play sounds from different file formats ( *.mp3-4, .wav, etc.)
+    [] create,delete playlists
+    [] add, delete songs from the playlist
+    [] create playlist from selected section from playlist.
+    [] create playlist with similar genres from other playlist
+    [] cool animations for gui widgets
+    [] colorful and flashy animations when playing a song ( cause why not)
+    [] database of music from third party?
+    [] download music locally from third party database
+    [] Buttons to skip song, go to last song, and play/pause
+    [] make the project both a webpage and a desktop app
+    [] 
