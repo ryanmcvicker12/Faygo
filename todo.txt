@@ -20,4 +20,41 @@ however im concerned about performance and readability.
     [] download music locally from third party database
     [] Buttons to skip song, go to last song, and play/pause
     [] make the project both a webpage and a desktop app
-    [] 
+    [] have a sign in page 
+    [] manage signed up users 
+    [] users can save the animations that are generated from the song?
+    [] records animations and saves them???
+    [] allow users to upload their own music 
+    [] algorithms to check for copyright so people dont upload proprietary content
+    [] each song has to be approved before being uploaded, only criteria is that 
+    [] have homepage identical to desktop home page
+    [] make webpage secure??? 
+    [] add EULA agreement and let people upload their own music?
+    [] use music from third party apps like soundcloud, youtube, spotify even if they have a system for that.
+    [] rules against, racism, hate-speech etc.
+    [] generate animations from live audio input??? like a microphone or midi or etc.
+
+
+-   Misc.
+    | these are some questions im going to try to answer during development 
+        - Can i convert a javascript web app into a desktop app? if so, how can I acheive this.
+        - could i use anime.js for the animations that go along with the music. Is this software open source?
+            Answer: anime.js uses the MIT license, therefore it is safe to use for commerical purposesmake the project both a webpage and a desktop app
+     - is there an audio visualizer library that can automatically generate the different styles of animation that i want?
+
+==========================================================================================================
+                                 | Development Journal |
+
+- first idea is to take an open source javascript music player and combine it with anime.js to see if this is plausable
+using open source options before deciding to make everything from scratch
+- open source isnt gonna work, just gonna make it from scratch in order to learn more and customize more.. i think.
+- the goal here is to have a basic music player that plays an animation along with it.
+
+- after doing some research about soundcloud, it turns out that you cant make any money off of your music
+ from thousands of listeners; if they come from a country where soundcloud cant advertise 
+- maybe i could just use ai or something to genrate animations that look cool, just like a proof of concept.
+- found out the animation i am looking to replicate is called an audio visualizer
+- going to try to use vue.js as the web framework with an audio visualizer library called wave.js
+- im thinking about how these kinds of libraries are made
+- just thinking about making the app in pure go ol html/css/javascript to go back and learn the basics 
+- or is this just a waste of time and i should use a framework??? 

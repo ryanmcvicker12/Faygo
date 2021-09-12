@@ -1,0 +1,155 @@
+body{
+    --color-primary: #0f31ca;
+    --color-primary-dark: #3542b9;
+    --color-secondary: #252c6a;
+    --color-error: #c50912;
+    --color-sucess: #128802;
+    --border-radius: 4px;
+
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content centers all elements in the container or div */
+
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* you can specify the content css targets with a period in front of it? like .container*/
+
+.container{
+    /*makes sure that the widgets shrink down to the right size when using different devices of different sizes*/
+
+    width: 400px;
+    max-width: 400px;
+    /*1 rem = 18px */
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background-color: #ffff;
+
+}
+
+/*you can change the style of an element by using .class_name*/
+/*for multiple objects put a comma after their class name*/
+
+.container, 
+.form__input,
+.form_button {
+     font : 300 1rem 'Verdana', sans-serif;
+}
+/*stops the container from looking wider than its supposed to be */
+
+.form > *:first-child{
+    margin-top: 0;
+    
+}
+.form > *:last-child{
+    margin-bottom: 0;
+    
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message{
+    text-align:center;
+    margin-bottom: 1rem;
+
+}
+.form__message--success{
+    color: var(--color-sucess);
+
+}
+.form__message--error{
+    color: var(--color-error);
+
+}
+/*spaces out the form inputs */
+.form__input-group{
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    display:block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #361492;
+    outline: none;
+    background: rgb(252, 250, 250);
+    transition: backround 0.2s, border-color 0.2s;
+
+}
+
+.form__input:focus{
+    border-color: var(--color-primary);
+    background: white;
+}
+
+.form__input--error{
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+
+}
+
+.backroundVideo{
+    z-index: -1; /* puts the video in the backround */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    left:0px;
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+/*toggles the existence of the form hidden*/
+.form--hidden{
+    display: none;
+}
+.form__button:active{
+    transform: scale(0.98); /*reduces size of button by 2%*/
+}
+
+.form__text{
+    text-align: center;
+
+}
+
+.form__link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.form__link:hover{
+    text-decoration: underline;
+}
