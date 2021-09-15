@@ -58,3 +58,21 @@ using open source options before deciding to make everything from scratch
 - im thinking about how these kinds of libraries are made
 - just thinking about making the app in pure go ol html/css/javascript to go back and learn the basics 
 - or is this just a waste of time and i should use a framework??? 
+- first attempt today at using node.js to make the login authentication system
+	- npm init -y : gave me an initial project package.json file that even noticed the github repo link! neat!
+	- npm i express bcrypt : installed brcrypt and other packages for the project?
+	- npm i --save-dev nodemon : allows me to install a package only for dev so i dont have to restart the server manually
+	- npm run startServer : starts the web app keep in mind that its running the name for nodemon in package.json which
+	in this case is "startServer"
+	- so i need to remember this little hitch i had so : lets say in '/public' i have all the folders css, js, and images.
+	in order to load in these images i had to use :
+		in server.js:
+			app.use('/css',express.static(__dirname + '/public/css'))
+
+		however in index.html to link it i used this :
+ 			
+		    	<link rel="stylesheet" href="/css/main.css">
+
+		Since the browser will read it as https://localhost:3000/css/main.css
+		even though if i run it locally it wont work since it isnt using the local file system
+

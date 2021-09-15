@@ -5,7 +5,7 @@
 
     <title>Faygo visualizer</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
 </head>
 <body>
@@ -16,9 +16,6 @@
         <form  class="form form--hidden" id="login">
             <!-- h1.form__title -->
             <h1 class="form__title">Login</h1>
-            <!-- .form__message.form__message--error -->
-            <!-- also incorrect user/pass form -->
-            <div class="form__mesage form__message--error"></div>
             <!-- contains inputs and input message-->
             <!-- .form__input-group -->
             <div class="form__input-group">
@@ -37,7 +34,7 @@
                 <div class="form__input-error-message"></div>
 
             </div>
-            <button class="form__button" type="submit">Submit</button>
+            <button class="form__button" type="submit">Sign In</button>
             <p class="form__text">
                 <a href="#" class="form__link" id="linkforgotPassword">Forgot your password?</a>
             </p>
@@ -77,7 +74,7 @@
                 <div class="form__input-error-message"></div>
 
             </div>
-            <button class="form__button" type="submit">Create Account</button>
+            <button id="createAccountButton" class="form__button" type="submit">Create Account</button>
             <p class="form__text">
                 <a href="#" class="form__link" id="linkLogin">Already have an account? Sign in here.</a>
             </p>
@@ -97,21 +94,21 @@
 
             </div>
 
-            <button class="form__button" type="submit">Submit</button>
+            <button id = "retrieveAccountButton" class="form__button" type="submit">Request reset</button>
             
         </form>
 
 
-        <!-- video that plays muted in the backround-->
         
         <video class="backroundVideo" autoplay muted loop >
-            <source src="backroundVideo.mp4" type="video/mp4">
+            <source src="/images/backroundVideo.mp4" type="video/mp4">
         </video>
 
     </div>
 
   
-    <script src="src/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/submit.js"></script>
 </body>
 
 
