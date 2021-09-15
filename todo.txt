@@ -20,7 +20,7 @@ however im concerned about performance and readability.
     [] download music locally from third party database
     [] Buttons to skip song, go to last song, and play/pause
     [] make the project both a webpage and a desktop app
-    [] have a sign in page 
+    [*] have a sign in page 
     [] manage signed up users 
     [] users can save the animations that are generated from the song?
     [] records animations and saves them???
@@ -75,4 +75,10 @@ using open source options before deciding to make everything from scratch
 
 		Since the browser will read it as https://localhost:3000/css/main.css
 		even though if i run it locally it wont work since it isnt using the local file system
-
+    - when running this project on my main machine, i had to delete the node_modules folder cause npm couldent find 
+    the packages bcrypt and nodemon, cause they already existed. so note for the future just delete the node_modules folder 
+    before trying to install the dependencies and run the project.
+    - going to use mysql node package for the user credentials to be stored in 
+    - need to add the functionality for storing credentials in a mysql database(use cheatsheet)
+    - watch video about using mysql databases in javascript
+    
