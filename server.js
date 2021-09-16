@@ -4,6 +4,7 @@
 const express = require('express')
 const bcrypt = require('bcryptjs') 
 
+
 const app = express();
 app.use(express.json())
 //setting up routes to read the assets used 
@@ -43,9 +44,12 @@ app.post('/users', async (req, res) => {
 
 app.get('/', (req,res) => {
 	//path must be absolute and not relative 
-	res.sendFile('index.html', {root : __dirname})
+	res.sendFile('signin.html', {root : __dirname})
 
 })
+
+
+//========= database ================
 
 app.listen(3000)
 

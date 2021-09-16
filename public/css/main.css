@@ -7,12 +7,12 @@ body{
     --border-radius: 4px;
 
     margin:0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    height: 55vh;
+/*    display: flex;*/
+    align-items: left;
     /* justify-content centers all elements in the container or div */
 
-    justify-content: center;
+    justify-content: left;
     font-size: 18px;
 }
 
@@ -53,11 +53,11 @@ body{
 
 .form__title{
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 .form__message{
-    text-align:center;
+    text-align:left;
     margin-bottom: 1rem;
 
 }
@@ -139,7 +139,7 @@ body{
 }
 
 .form__text{
-    text-align: center;
+    text-align: left;
 
 }
 
