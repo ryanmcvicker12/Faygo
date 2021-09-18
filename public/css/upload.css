@@ -1,0 +1,31 @@
+
+body{
+    --color-primary: #6124a7;
+    --color-primary-dark: #5b248f;
+    --color-secondary: #040511;
+    --color-error: #c50912;
+    --color-sucess: #128802;
+    --border-radius: 4px;
+    background-color: #000000;
+
+    margin:0;
+    height: 55vh;
+/*    display: flex;*/
+    align-items: left;
+    /* justify-content centers all elements in the container or div */
+
+    justify-content: left;
+    font-size: 18px;
+}
+
+
+
+.container{
+    margin:auto;
+    width: 400px;
+    max-width: 400px;
+    height:50px;
+    max-height: auto;
+    margin-top: 20rem;
+    background-color: var(--color-primary);
+}

@@ -42,12 +42,15 @@ app.post('/users', async (req, res) => {
 	}
 })
 
-app.get('/', (req,res) => {
+app.get('/sign_in', (req,res) => {
 	//path must be absolute and not relative 
 	res.sendFile('signin.html', {root : __dirname})
 
 })
 
+app.get('/', (req,res) => {
+	res.sendFile('visualizer.html', {root: __dirname})
+})
 
 //========= database ================
 
