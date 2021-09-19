@@ -81,4 +81,10 @@ using open source options before deciding to make everything from scratch
     - going to use mysql node package for the user credentials to be stored in 
     - need to add the functionality for storing credentials in a mysql database(use cheatsheet)
     - watch video about using mysql databases in javascript
-    
+   - finally am able to upload an audio file to the page, just needs a little layout tuning
+   - set the audio controls to the footer of the webpage 
+   - need to do some research on what a 'video synthesizer' should have 
+   - going to use hydra synth for the base functionality of the animations in javascript , just need to add a simple interface
+   with more functionality like uploading songs and creating animations out of them
+   or even streamed audio input.
+   - the goal is now to get hydra to display the animations on the home page using the npm module
